@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Raleway:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Nunito:ital,wght@1,900&family=Raleway:wght@800;900&family=Roboto+Slab:wght@900&display=swap');
+
+li,a,button {
+    font-family: "Mitr", sans-serif;
+}
+
+video#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0.9;
+  }
+  
+  div.box {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: rgb(224, 93, 5)   ;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    font-size: 1.2em;
+    line-height: 60px;
+    text-align: left;
+}
+
+.nav a {
+    padding-left: 10px;
+    color: #fff;
+    border-bottom: 1px solid#888;
+    transition: .3s;
+    text-decoration: none
+}
+
+.nav a:hover {
+    background-color: coral;
+}
+
+.nav a.active {
+    background-color: rgb(241, 132, 59);
+    color: #fff;
+    cursor: default;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.nav li li {
+    font-size: .8rem;
+}
+
+/* Style meun for Larger screens*/
+@media screen and (min-width: 650px) {
+    .nav li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        margin: -4px;
+        font-size: 1.4rem
+    }
+    
+    .nav a {
+        border-bottom: none;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a {
+        padding-left: 0;
+    }
+
+/*sub meun*/
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
+}
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 160px;
+    color: #ef7326;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 4px 4px #0e0e0e;
+}
+
+.content a {
+    color: #d68915;
+    font-size: 16px;
+    font-family: "Mitr", sans-serif;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px
+}
+
+.content:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.statistics {
+    margin: 0;
+    padding: 0;
+    top: 45px;
+    position: absolute;
+    left: 0px;
+}
+
+.time {
+    margin: 0;
+    padding: 0;
+    top: 30px;
+    position: absolute;
+    right: 0px;
+}
