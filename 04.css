@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Raleway:wght@800;900&display=swap');
+
+
+li,a,button {
+    font-family: "Mitr", sans-serif;
+}
+
+  div.box {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: rgb(224, 93, 5)   ;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    font-size: 1.2em;
+    line-height: 60px;
+    text-align: left;
+}
+
+.nav a {
+    padding-left: 10px;
+    color: #fff;
+    border-bottom: 1px solid#888;
+    transition: .3s;
+    text-decoration: none
+}
+
+.nav a:hover {
+    background-color: coral;
+}
+
+.nav a.active {
+    background-color: rgb(241, 132, 59);
+    cursor: default;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.nav li li {
+    font-size: .8rem;
+}
+
+/* Style meun for Larger screens*/
+@media screen and (min-width: 650px) {
+    .nav li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        margin: -4px;
+        font-size: 1.4rem
+    }
+    
+    .nav a {
+        border-bottom: none;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a {
+        padding-left: 0;
+    }
+
+/*sub meun*/
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
+}
+}
+
+.hero {
+    background-color: rgb(246, 190, 150);
+    overflow: hidden;
+}
+
+.heading {
+    color: #3b3635;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Mitr", sans-serif;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+    font-family: "Mitr", sans-serif;
+} 
+
+.hero-content button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+.hero-image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content button{
+        font-size: 16px;
+        padding:8px 16px ;
+    }
+    .hero-image{
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
