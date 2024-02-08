@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Raleway:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Nunito:ital,wght@1,900&family=Raleway:wght@800;900&family=Roboto+Slab:wght@900&display=swap');
+
+li,a,button {
+    font-family: "Mitr", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(hh/38.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+div.box {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: rgb(224, 93, 5)   ;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    font-size: 1.2em;
+    line-height: 60px;
+    text-align: left;
+}
+
+.nav a {
+    padding-left: 10px;
+    color: #fff;
+    border-bottom: 1px solid#888;
+    transition: .3s;
+    text-decoration: none
+}
+
+.nav a:hover {
+    background-color: coral;
+}
+
+.nav a.active {
+    background-color: rgb(241, 132, 59);
+    color: #fff;
+    cursor: default;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.nav li li {
+    font-size: .8rem;
+}
+
+/* Style meun for Larger screens*/
+@media screen and (min-width: 650px) {
+    .nav li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        margin: -4px;
+        font-size: 1.4rem
+    }
+    
+    .nav a {
+        border-bottom: none;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a {
+        padding-left: 0;
+    }
+
+/*sub meun*/
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
+}
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.col h1{
+    color: #fff;
+    font-size: 55px;
+    font-family: "Mitr", sans-serif;
+}
+
+.col p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: "Mitr", sans-serif;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    font-family: "Mitr", sans-serif;
+}
+
+button:hover {
+    background-color: rgb(108, 108, 108);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url(hh/32.jpg);
+}
+
+.card2 {
+    background-image: url(hh/37.jpg);
+}
+
+.card3 {
+    background-image: url(hh/36.jpg);
+}
+
+.card4 {
+    background-image: url(hh/33.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    text-shadow:0 0 5px #999;
+    color: #fff
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+}
